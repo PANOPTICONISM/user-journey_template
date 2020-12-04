@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* HEADER */
+
+header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px ridge brown;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header > div {
+    max-width: 400px;
+    margin: 20px 10px;
+    padding: 20px;
+}
+/* MATRIX */
+main {
+    max-width: 1350px;
+    margin: auto;
+}
+
+.phases {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.phases > div {
+    margin: 10px;
+}
+
+.phases > div h4 {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.phase_0 h4 {
+    background-color: rgb(92, 149, 182);
+}
+
+.journey > div {
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.phase_1 h4, .phase_1 .journey  {
+    background-color: lightsteelblue;
+}
+
+.phase_2 .journey, .phase_2 h4 {
+    background: rgb(223, 126, 126);
+}
+
+.phase_3 h4, .phase_3 .journey {
+    background-color: rgb(245, 226, 143);
+}
+
+.phase_4 h4, .phase_4 .journey {
+    background-color:  rgb(80, 201, 161);
+}
