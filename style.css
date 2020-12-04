@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 body {
     margin: 0;
+    background-color: #ececec;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
 }
 
 img {
@@ -19,14 +25,19 @@ header img {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 8px ridge brown;
-    margin-top: 20px;
+    border: 8px ridge rgb(42, 140, 165);
+    margin: 20px 0;
+    padding: 5px;
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: rgb(147, 162, 177);
+    max-width: 1290px;
+    margin: 20px auto;
+    margin-bottom: -10px;
 }
 
 header > div {
@@ -34,9 +45,14 @@ header > div {
     margin: 20px 10px;
     padding: 20px;
 }
+
+h3 {
+    margin: 0;
+    margin-bottom: -8px;
+}
 /* MATRIX */
-main {
-    max-width: 1350px;
+main, footer {
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -46,7 +62,7 @@ main {
 }
 
 .phases > div {
-    margin: 10px;
+    margin: 10px auto;
 }
 
 .phases > div h4 {
@@ -56,6 +72,9 @@ main {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .phase_0 h4 {
@@ -83,4 +102,49 @@ main {
 
 .phase_4 h4, .phase_4 .journey {
     background-color:  rgb(80, 201, 161);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+footer > div {
+    width: 640px;
+    padding: 20px;
+    background-color: rgb(222, 198, 176);
+}
+
+footer > div:first-child {
+    margin: 0px 10px 0 5px;
+}
+
+footer h4 {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    .phases > div {
+        margin: auto;
+    }
+
+    header > div {
+        margin: auto;
+        padding: 0;
+    }
+
+    header {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1350px) {
+    footer > div, footer > div:first-child {
+        margin: 5px auto;
+    }
 }
