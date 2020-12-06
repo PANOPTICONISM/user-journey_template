@@ -149,4 +149,8 @@ footer h4 {
     footer > div:first-child {
         margin: 20px auto;
     }
+
+    footer > div:last-child {
+        margin: auto;
+    }
 }
